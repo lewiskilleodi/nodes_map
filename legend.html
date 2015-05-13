@@ -1,0 +1,53 @@
+var rect = svg.append("rect")
+	.attr("x", "20px")
+	.attr("y", height - (distance - 0) + "px")
+	.attr("width", 230)
+	.attr("height", 100)
+	.attr("rx", 5)
+	.attr("ry", 5)
+	.style("fill","gray")
+	.style("stroke","black");
+
+svg.append("circle")
+       .attr("cx", "40px")
+       .attr("cy", height - (distance - 25) + "px")
+       .attr("r", 8)
+       .style("fill", "black");
+
+svg.append("circle")
+       .attr("cx", "40px")
+       .attr("cy", height - (distance - 25) + "px")
+       .attr("r", 3)
+       .style("fill", "white");
+
+svg.append("text")
+       .attr("dy", height - (distance - 30) + "px")
+       .attr("dx", "60px")
+       .attr("font-family", "sans-serif")
+       .style("font-weight", "bold")
+       .style("fill","black")
+       .style("line","black")
+       .style("font-size", "1em")
+       .text("ODI Learning Node");
+
+svg.append("circle")
+       .attr("cx", "40px")
+       .attr("cy", height - (distance - 60) + "px")
+       .attr("r", 8)
+       .style("fill", "#black");
+
+svg.append("circle")
+       .attr("cx", "40px")
+       .attr("cy", height - (distance - 60) + "px")
+       .attr("r", 3)
+       .style("fill", "#b13198");
+
+svg.append("text")
+       .attr("dy", height - (distance - 65) + "px")
+       .attr("dx", "60px")
+       .attr("font-family", "sans-serif")
+       .style("font-weight", "bold")
+       .style("fill","#black")
+       .style("line","#black")
+       .style("font-size", "1em")
+       .text("ODI Network Node");
