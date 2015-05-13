@@ -118,6 +118,7 @@ d3.csv("data/places_dots.csv", function(error, data) {
        .style("fill","black")
        .style("line","black")
        .style("font-size", "1em")
+       .style("font-family", "helvetica")
 	.style("visibility", function(d) { if (d.radius > 2) { return "hidden"; } else {return "hidden"; }})
        .text(function(d) { return d.place; });
     node.selectAll('rect')
